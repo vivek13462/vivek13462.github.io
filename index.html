@@ -1,97 +1,213 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Blog</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
-    <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
+<meta charset="utf-8">
+<title>Vivek Tiwari | Cloud & AI Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color:#F1F1F1;
-    padding: 4em 0;
-    font-family: 'Raleway';
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    line-height: 1.6;
 }
 
-.article-container {
-    background: #fff;
-    border-left: 10px solid #093F68;
-    padding: 2em 0;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.article-container label {
-    text-transform: uppercase;
-    font-size: 2.5em;
-    font-weight: bold;
-    line-height: 1em;
-    color: #0099FF;
+.hero img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    margin-bottom: 20px;
 }
 
-.article-container p {
-    color: #737373;
-}    
-</style>    
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.btn-primary:hover {
+    background: #0ea5e9;
+}
+
+.btn-outline {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* Sections */
+.section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* Testimonials */
+.testimonial {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #cbd5e1;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+/* Projects */
+.project-list a {
+    display: block;
+    margin: 10px 0;
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-list a:hover {
+    color: #0ea5e9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+</style>
 </head>
-<body>    
-<div>
-    <div class="article-container">
-    <div class="row expanded">    
-    <div class="large-1 columns">    
-    <img alt="" class="avatar width-full rounded-2" height="100" src="https://avatars2.githubusercontent.com/u/21357144?s=460&amp;v=4" width="100">   
-    </div> 
-    <div class="large-11 columns">
-    <label>Hey, I'm Vivek Tiwari ;)</label>   
-    </div>     
-    <br> <br> <br> <br> 
-    <div>
-    <p>&nbsp;I’m a cloud and AI engineer focused on building scalable distributed systems and intelligent retrieval platforms.
 
-At Microsoft, I work extensively with Azure Messaging and AI Search services, helping design high-availability architectures capable of handling enterprise-scale workloads. I specialize in performance optimization, cost-efficient scaling strategies, and deep technical problem-solving at the infrastructure and SDK layers.
+<body>
 
-Beyond cloud architecture, I actively contribute to AI-driven knowledge systems, designing retrieval-based chat solutions that leverage LLMs and semantic search to unlock insights from organizational data.
-</p>        
-<br>
-<h4>Stuff you will find me on:</h4>
-<ul>
-  <li><a href=" https://www.linkedin.com/in/vivek-tiwari-1300a4a4">LinkedIn</a></li>
-  <li><a href="https://github.com/vivek13462">GitHub</a></li>
-  <li><a href="https://www.facebook.com/vivek.tiwari.357284">Facebook</a></li>
-  <li><a href="Files/Resume.pdf">Resume</a></li>
-  <li><a href="mailto:vivek.13462@gmail.com">Mail</a></li>
-</ul>        
- <br>
+<!-- HERO -->
+<section class="hero">
+    <img src="https://avatars2.githubusercontent.com/u/21357144?s=460&v=4" alt="Vivek Tiwari">
+    <h1>Hi, I'm Vivek 👋</h1>
+    <p>
+        Cloud & AI Engineer at Microsoft specializing in Azure Messaging, AI Search, and distributed architectures.
+        I design scalable systems, optimize high-traffic workloads, and build intelligent retrieval-based AI solutions.
+    </p>
 
-<h4>Here's what people say about me:</h4>
-      <p><i>"Friendliest guy, always looking for more. Eager to get things done and jump on to any things thrown at him."</i></p>      
-    <b><i><a href="https://www.lifepharm.com/">-Supervisor at LifePharm,Irvine,CA</a></i></b>
-        <br><br> 
-      <p><i>"I enjoyed meeting Vivek and although he came to our team during a time of more analysis and design vs. a ton of coding, the couple things he did get assigned were completed successfully. He met with who he needed to in order to figure out how to complete his tasks. He seems to have a figure it out kind of attitude which was great to see. He does have good coding development knowledge; a few aspects of software development process were very new to him. He did however seem to pick it up pretty quickly. He was very pleasant, and I wish him well on his new team."</i></p>  
-    
-    <b><i><a href="https://www.quickenloans.com/">-Team Lead at Quicken Loans,Detroit,MI</a></i></b>
-        <br><br>     
-        <p><i>"I've been happy with Vivek's performance this summer; bug fixes and tweaks have been done quickly and without bugs. I appreciate how proactive he've been in picking up tickets and tasks, everytime he completed a ticket he was quick to look for work to do, ask around and get stuff done that's a great quality. Strengths:- he've been good at completing tasks, able to jump into existing code and make tweaks quickly and efficiently:- proactive at looking for tasks to complete :-willing to learn and explore opportunites."</i></p>  
-    
-    <b><i><a href="https://www.rocketloans.com/">-Team Lead at RocketLoans,Detroit,MI</a></i></b>
-        <br><br>
-        <p><i>"Vivek Tiwari is one of the most talented, intelligent, consistent and genuinely good hearted people that I have had the opportunity to work with. Vivek is professional, hard-working and manages time efficiently. Honestly, he is an amazing asset to our team."</i></p>  
-    
-    <b><i><a href="http://www.aeonsoftware.net/">-Team Lead at Aeon Software,Mumbai,MH</a></i></b>
-      <br><br>
-        <p><i>"Vivek is very professional and a humble person to work with. I was his Master’s project advisor. Working with Vivek was a creative and enjoyable experience. Vivek is a good-hearted person and his communication style is friendly and highly informative. I will look forward to working with him on future projects whenever available. I am pretty sure he will be amazing asset to any company he works for."</i></p>  
-    
-    <b><i>-Dr. Doina Bein(California State University, Fullerton)</i></b>
-    <br><br>
-<h4>Here's my Work and Project links:</h4>
-<ul>
-  <li><a href="https://cpsc-597-trs.herokuapp.com">Threat Reporting System</a></li>
-  <li><a href="https://delicious-food.herokuapp.com/">Delicio-us</a></li>
-  <li><a href="https://conjointreview.herokuapp.com/">Conjoint</a></li>
-</ul> 
-        
-   </div>    
+    <div class="buttons">
+        <a class="btn btn-primary" href="Files/Resume.pdf">Download Resume</a>
+        <a class="btn btn-outline" href="mailto:vivek.13462@gmail.com">Contact Me</a>
+        <a class="btn btn-outline" href="https://github.com/vivek13462">GitHub</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/vivek-tiwari-1300a4a4">LinkedIn</a>
     </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>About Me</h2>
+    <p>
+        I work at the intersection of cloud infrastructure and AI-driven knowledge systems. 
+        My experience spans Azure Event Hubs, Service Bus, AI Search, SDK-level investigations, 
+        and high-availability architecture design for enterprise workloads.
+    </p>
+    <br>
+    <p>
+        I’m particularly passionate about retrieval-based AI systems and have contributed to building 
+        conversational platforms that index distributed repositories to enable intelligent, 
+        context-aware knowledge discovery.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <a href="https://cpsc-597-trs.herokuapp.com">Threat Reporting System</a>
+        <a href="https://delicious-food.herokuapp.com/">Delicio-us</a>
+        <a href="https://conjointreview.herokuapp.com/">Conjoint</a>
     </div>
-</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+    <h2>What People Say</h2>
+
+    <div class="testimonial">
+        <p>"Vivek is professional, hard-working and manages time efficiently. An amazing asset to the team."</p>
+        <span>- Team Lead, Aeon Software</span>
+    </div>
+
+    <div class="testimonial">
+        <p>"Proactive, quick learner, and strong at jumping into existing systems and delivering results."</p>
+        <span>- Team Lead, Rocket Loans</span>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Vivek Tiwari | Built with passion for Cloud & AI
+</footer>
+
 </body>
-</html>    
+</html>
